@@ -1,0 +1,13 @@
+[package]
+name = "haiku-nft"
+version = "0.1.0"
+authors = ["John <john.doe@crypto.com>"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = "4.0.0"
+near-contract-standards = "4.0.0"
+ureq = { version = "2.4.0", features = ["json"] }

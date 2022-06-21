@@ -1,0 +1,35 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on: push
+
+defaults:
+  run:
+    working-directory: 'dapp'
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+    - run: |
+        export BASE_VERSION=$(node -p "require('./package.json').version")
+        export PAGES_LINK=https://${GITHUB_REPOSITORY%/*}.github.io/${GITHUB_REPOSITORY#*/}
+        echo ${BASE_VERSION}.${{ github.run_number }}
+        echo $PAGES_LINK
+        git remote set-url origin https://Bearer:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        sed -i "s#gh-pages-link#$PAGES_LINK#" package.json
+        npm --no-git-tag-version version ${BASE_VERSION}.${{ github.run_number }}
+        npm ci
+        npm run deploy --if-present
