@@ -24,10 +24,10 @@ const CompleteHaiku = ({currentUser, contract, backendCall, setMessage, setIsLoa
         }
         
         fetchData();
-    }, [contract, currentUser]);
+    }, [contract, currentUser, id]);
 
     useEffect(() => {
-        if(!haiku || haiku.owner_id != currentUser.accountId){
+        if(!haiku || haiku.owner_id !== currentUser.accountId){
             return;
         }
 
@@ -39,7 +39,7 @@ const CompleteHaiku = ({currentUser, contract, backendCall, setMessage, setIsLoa
         }
         
         fetchData();
-    }, [haiku, backendCall, currentUser]);
+    }, [haiku, backendCall, currentUser, id]);
 
     const onGeneratePrompt = async (e) => {
         e.preventDefault();
@@ -128,7 +128,7 @@ const CompleteHaiku = ({currentUser, contract, backendCall, setMessage, setIsLoa
                 </>
     }
 
-    if(haiku.owner_id != currentUser.accountId){
+    if(haiku.owner_id !== currentUser.accountId){
         return <>
                     <Typography variant="h4" component="h1" gutterBottom>
                         You don't own the haiku NFT #{id}

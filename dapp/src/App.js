@@ -6,7 +6,7 @@ import SignIn from './components/SignIn.jsx';
 import CompleteHaiku from './components/CompleteHaiku.jsx';
 import Layout from './layout';
 import Big from 'big.js';
-import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 var version = require('../package.json').version;
 
 const BOATLOAD_OF_GAS = Big(3).times(10 ** 14).toFixed();
