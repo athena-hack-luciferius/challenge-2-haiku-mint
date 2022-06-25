@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/challenge-2-haiku-mint/static/css/main.1ded9631.css",
-    "main.js": "/challenge-2-haiku-mint/static/js/main.574dc7d2.js",
+    "main.css": "/challenge-2-haiku-mint/static/css/main.040b3c75.css",
+    "main.js": "/challenge-2-haiku-mint/static/js/main.84b92368.js",
     "static/js/787.03770da1.chunk.js": "/challenge-2-haiku-mint/static/js/787.03770da1.chunk.js",
     "static/media/404.jpg": "/challenge-2-haiku-mint/static/media/404.6fa35088bd569d4c3d4c.jpg",
     "index.html": "/challenge-2-haiku-mint/index.html",
-    "main.1ded9631.css.map": "/challenge-2-haiku-mint/static/css/main.1ded9631.css.map",
-    "main.574dc7d2.js.map": "/challenge-2-haiku-mint/static/js/main.574dc7d2.js.map",
+    "main.040b3c75.css.map": "/challenge-2-haiku-mint/static/css/main.040b3c75.css.map",
+    "main.84b92368.js.map": "/challenge-2-haiku-mint/static/js/main.84b92368.js.map",
     "787.03770da1.chunk.js.map": "/challenge-2-haiku-mint/static/js/787.03770da1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ded9631.css",
-    "static/js/main.574dc7d2.js"
+    "static/css/main.040b3c75.css",
+    "static/js/main.84b92368.js"
   ]
 }
