@@ -57,7 +57,7 @@ const Dashboard = ({currentUser, contract, version}) => {
             </Typography>
 
             <Typography variant="body1" component="p" className='mt-2'>
-              Below you see your haiku collection. And below that you can mint a new haiku. Have fun!
+              Below you see your haiku collection. And in the top left corner you can mint new haikus. Have fun!
             </Typography>
               
             {nfts.length > 0
