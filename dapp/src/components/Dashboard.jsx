@@ -105,7 +105,7 @@ const Dashboard = ({currentUser, contract, version}) => {
               }
             </Grid>
             : <p>
-                  You do not have any NFTs in your collection. All used NFTs are filtered out in this view.
+                  You do not have any NFTs in your collection.
               </p>}
           </Box>
 }
