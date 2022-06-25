@@ -11,10 +11,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-image {
+  background-image: url('https://ipfs.io/ipfs/bafybeicq7by6aylj4bt7uz76c3ocqje5wiwgwnp7pxx6vui5ux2rwx3snq');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.25;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  position: fixed;
+  top:0;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+}
+
 #page-wrapper {
-  max-width: 66%;
   margin: 0 auto 0 auto;
-  overflow: auto
+  overflow: auto;
+  padding-left: 16%;
+  padding-right: 16%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 #App {

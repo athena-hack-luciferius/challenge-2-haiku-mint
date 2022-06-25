@@ -1,9 +1,10 @@
 import React from 'react';
-import { Typography, Button, Tooltip, TextField, Box } from '@mui/material';
+import { Typography, Button, Tooltip, TextField, Box, Paper } from '@mui/material';
 
 export default function FillForm({ onFill }) {
   return (
-    <Box component="form" onSubmit={onFill} className="items-center align-middle flex flex-col">
+    <Box component="form" onSubmit={onFill} className="items-center align-middle flex flex-col my-4">
+      <Paper className="items-center align-middle flex flex-col p-5">
         <Typography variant="h4" component="h1" gutterBottom>Fill the haiku details</Typography>
         <Typography variant="body1" component="p" className='my-2'>Fill all haiku details. Click on one of the prompts to take over the haiku lines.</Typography>
         <TextField id="title_prompt" label="Title of the haiku" variant="outlined" className="my-4 self-center"
@@ -18,6 +19,7 @@ export default function FillForm({ onFill }) {
                 Submit
             </Button>
         </Tooltip>
+      </Paper>
     </Box>
   );
 }

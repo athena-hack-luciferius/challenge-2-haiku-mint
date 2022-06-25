@@ -6,7 +6,7 @@ export default function SignIn({signIn, version}) {
     <>
       <div className="my-4">
         <Typography variant="h4" component="h1" gutterBottom>
-          Title of Your App - {version}
+          Haiku World - {version}
         </Typography>
         <Typography variant="body1" component="p" className='my-4'>
             This app was developed for the XXX hackathon.

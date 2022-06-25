@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NotFound from './components/404.jsx';
 import Dashboard from './components/Dashboard.jsx';
-import Collection from './components/Collection.jsx';
 import SignIn from './components/SignIn.jsx';
 import CompleteHaiku from './components/CompleteHaiku.jsx';
 import Layout from './layout';
@@ -172,12 +171,9 @@ const App = ({ contract, currentUser, config, wallet, provider, lastTransaction,
   
   return (
     <Routes>
-      <Route path="/" element={<Layout currentUser={currentUser} signIn={signIn} signOut={signOut} clearMessage={clearMessage} message={message} isLoadingModal={isLoadingModal}/>}>
-        <Route index element={<Dashboard version={version}/>}/>
-        <Route path="haikus">
-          <Route index element={<Collection currentUser={currentUser} contract={contract} onMint={onMint} />}/>
-          <Route path=":id" element={<CompleteHaiku currentUser={currentUser} contract={contract} backendCall={backendCall} setMessage={setMessage} setIsLoadingModal={setIsLoadingModal} />}/>
-        </Route>
+      <Route path="/" element={<Layout currentUser={currentUser} signIn={signIn} signOut={signOut} clearMessage={clearMessage} message={message} isLoadingModal={isLoadingModal} onMint={onMint}/>}>
+        <Route index element={<Dashboard currentUser={currentUser} contract={contract} version={version}/>}/>
+        <Route path="haikus/:id" element={<CompleteHaiku currentUser={currentUser} contract={contract} backendCall={backendCall} setMessage={setMessage} setIsLoadingModal={setIsLoadingModal}/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Route>
     </Routes>

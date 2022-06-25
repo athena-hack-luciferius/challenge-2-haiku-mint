@@ -149,7 +149,7 @@ const CompleteHaiku = ({currentUser, contract, backendCall, setMessage, setIsLoa
                             ? 
                             <Grid container spacing={2}>
                             {prompts.map(prompt => 
-                                <Grid item xs={4}>
+                                <Grid item xs={12} sm={6} md={4}>
                                     <Card>
                                         <CardActionArea onClick={_ => fillForm(prompt)}>
                                             <CardContent>
@@ -166,7 +166,7 @@ const CompleteHaiku = ({currentUser, contract, backendCall, setMessage, setIsLoa
                             : <p>
                                 Something went wrong. There are no prompts available.
                             </p>}
-                        <FillForm onFill={onFill} />
+                        <FillForm onFill={onFill}/>
                     </Box>
                 </>
     }
