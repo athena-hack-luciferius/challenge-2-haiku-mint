@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/challenge-2-haiku-mint/static/css/main.040b3c75.css",
-    "main.js": "/challenge-2-haiku-mint/static/js/main.27f27c4e.js",
+    "main.js": "/challenge-2-haiku-mint/static/js/main.fcb6f03c.js",
     "static/js/787.03770da1.chunk.js": "/challenge-2-haiku-mint/static/js/787.03770da1.chunk.js",
     "static/media/404.jpg": "/challenge-2-haiku-mint/static/media/404.6fa35088bd569d4c3d4c.jpg",
     "index.html": "/challenge-2-haiku-mint/index.html",
     "main.040b3c75.css.map": "/challenge-2-haiku-mint/static/css/main.040b3c75.css.map",
-    "main.27f27c4e.js.map": "/challenge-2-haiku-mint/static/js/main.27f27c4e.js.map",
+    "main.fcb6f03c.js.map": "/challenge-2-haiku-mint/static/js/main.fcb6f03c.js.map",
     "787.03770da1.chunk.js.map": "/challenge-2-haiku-mint/static/js/787.03770da1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.040b3c75.css",
-    "static/js/main.27f27c4e.js"
+    "static/js/main.fcb6f03c.js"
   ]
 }
