@@ -139,7 +139,7 @@ const App = ({ contract, currentUser, config, wallet, provider, lastTransaction,
   const signIn = () => {
     wallet.requestSignIn(
       {contractId: contract.contractId, //contract requesting access 
-       methodNames: [contract.sample_method.name]}, //used methods
+       methodNames: []}, //used methods
       'NEAR Challenge #8 - DAO Dashboard', //optional name
       null, //optional URL to redirect to if the sign in was successful
       null //optional URL to redirect to if the sign in was NOT successful
